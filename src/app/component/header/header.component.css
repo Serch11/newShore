@@ -1,0 +1,55 @@
+#header {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100% !important;
+  box-sizing: content-box !important;
+  position: absolute;
+  display: block;
+  position: relative;
+  padding: 25px;
+  box-shadow: 0px 0px 15px black;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #ffbf00;
+}
+
+.navbar {
+  left: 0;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-start;
+  width: inherit;
+  height: inherit;
+}
+.navbar div{
+  margin-left: 35px;
+}
+.navbar .section {
+  display: flex;
+}
+.navbar li {
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style: none;
+}
+.section li a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+.img-title {
+  width: 150px;
+}
+.img-title img {
+  width: 100%;
+}
+
+.section li a:hover {
+  color: #00adb5;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}

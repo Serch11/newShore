@@ -1,0 +1,48 @@
+<section id="gryffindor">
+
+  <div id="container">
+    <div>
+      <h2>Datos de la casa</h2>
+      <h3><strong>Cantidad de Estudiantes : </strong>{{cantPersonaje}}</h3>
+    </div>
+    <div class="data">
+      <div class="form-group">
+        <label for="">Buscar por nombre y apellido</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <i class="fa fa-search"></i>
+            </div>
+          </div>
+          <input type="text" class="form-control"
+            [(ngModel)]="buscarPorNombre">
+        </div>
+        <select  style="margin-top:10px" *ngIf="listPersonaje" class="form-control mx-sm-1 mb-2" [(ngModel)]="buscarPorNombre">
+          <option>Buscar Por nombre</option>
+          <option value="{{item.name}}" *ngFor="let item of listPersonaje |buscarPorNombre:buscar ">{{item.name}}</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="personajes" *ngIf="listPersonaje">
+    <div class="personaje row" *ngFor="let item of listPersonaje |buscarPorNombre:buscarPorNombre">
+      <div class="row">
+        <div class="image col-md-4">
+          <img src="{{item.image}}" alt="">
+        </div>
+        <br>
+        <div class="col-md-8">
+          <br>
+          <h3 class="title-name">{{item.name}}</h3>
+          <p><strong>Specie:</strong>{{item.species}}</p>
+          <p><strong>Gender:</strong>{{item.gender}}</p>
+          <p><strong>Patronoues:</strong>{{item.patronus || "no tiene"}}</p>
+          <p><strong>Date Of Birth:</strong>{{item.dateOfBirth}}</p>
+          <p><strong>House:</strong>{{item.house}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

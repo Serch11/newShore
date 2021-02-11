@@ -1,0 +1,68 @@
+#house {
+  border: 1px solid trasparent;
+  padding: 10px;
+  margin: top 30px;
+  height: 1200px;
+}
+
+.houses {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.content {
+  margin-top: 20px;
+  width: 300px;
+  height: auto;
+  box-shadow: 0px 0px 5px black;
+  border-radius:10px;
+}
+
+.content:hover{
+  background-color: antiquewhite;
+  cursor:pointer;
+  transition: all 0.5s ease;
+}
+
+.content .title {
+  background-color: white;
+  padding:15px;
+  font-weight: bold;
+  font-size: 25px;
+  align-items: center;
+  text-align: center;
+  border: 1px solid trasparent;
+  box-shadow: 0px 0px 3px black;
+}
+
+.content a{
+  text-decoration:none;
+  color: black;
+}
+
+.imagen {
+  text-align:center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.imagen img {
+  left: 15px;
+  padding: 20px;
+  width: 100%;
+}
+
+.gryffindor{
+  background-color: #ff4646;
+}
+.slytherin{
+  background-color: #007944;
+}
+.ravenclaw{
+background-color: #28abb9;
+}
+.hufflepuff{
+  background-color: #ffe227;
+}

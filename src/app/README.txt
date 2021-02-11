@@ -11,3 +11,6 @@ ejecutar el siguiente comando cuando ya este dentro de la carpeta en una termina
 npm install
 
 ng serve -o
+
+
+## no habia implementado la utilizacion sass el cual por ese motivo utilice css y algo de bootstrap
